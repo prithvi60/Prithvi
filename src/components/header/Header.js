@@ -3,8 +3,8 @@ import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
-import { CgSun } from "react-icons/cg/";
-import { HiMoon } from "react-icons/hi";
+// import { CgBowl } from "react-icons/cg";
+// import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 
 function Header(props) {
@@ -47,20 +47,20 @@ function Header(props) {
     }
   }
 
-  const icon =
-    props.theme.name === "dark" ? (
-      <HiMoon
-        strokeWidth={1}
-        size={20}
-        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
-      />
-    ) : (
-      <CgSun
-        strokeWidth={1}
-        size={20}
-        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
-      />
-    );
+  // const icon =
+  //   props.theme.name === "dark" ? (
+  //     <HiMoon
+  //       strokeWidth={1}
+  //       size={20}
+  //       color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+  //     />
+  //   ) : (
+  //     <CgBowl
+  //       strokeWidth={1}
+  //       size={20}
+  //       color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+  //     />
+  //   );
 
   return (
     <Fade top duration={1000} distance="20px">
@@ -134,7 +134,7 @@ function Header(props) {
               </NavLink>
             </li>
             <button {...styles} onClick={changeTheme}>
-              {icon}
+              {/* {icon} */}
             </button>
           </ul>
         </header>
